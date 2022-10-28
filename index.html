@@ -1,12 +1,115 @@
-<html>
-  <head>  
-    <title> Hello world </title>
-    <link href="main.css" rel="stylesheet" /> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky3</title>
+    <link rel="stylesheet" href="Sticky3.css">
+</head>
+<body>
+    <nav class="nav">
+
+        <div class="nav_container">
+
+           <h1 class="nav_logo">Bake n' Take</h1>
+
+            <label for="menu" class="nav_label">
+                <img src="./Practica pasteleria 1 - copia (2) - copia/menu.svg" class="nav_img">
+            </label>
+            
+            <input type="checkbox" id="menu" class="nav_input">
+
+            <div class="nav_menu">
+                <a href="#sec1" class="nav_item">Inicio</a>
+                <a href="#sec2" class="nav_item">Sabores</a>
+                <a href="#sec3" class="nav_item">Adornos</a>
+                <a href="#sec4" class="nav_item">Pedidos</a>
+                <a href="#sec5" class="nav_item">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
     
-  </head>
-  <body>
-    <h1> Hello world </h1>
-    
-  </body>
+    <div class="container">
+        <div class="slider">
+
+            <input type="radio" class="radio" name="images" id="radio-1" checked>
+            <input type="radio" class="radio" name="images" id="radio-2">
+            <input type="radio" class="radio" name="images" id="radio-3">
+            <input type="radio" class="radio" name="images" id="radio-4">
+
+            <div class="slide" id="slide-1">
+                <img src="./Practica pasteleria 1 - copia (2)/pexels-danik-prihodko-8176298.jpg" alt="">
+                <div class="caption"> <span>Deliciosos</span>Pasteles</div>
+            </div>
+            <div class="slide" id="slide-2">
+                <img src="./Practica pasteleria 1 - copia (2)/pexels-igor-ovsyannykov-205961.jpg" alt="">
+                <div class="caption"> <span>Combinaciones</span>Personales</div>
+            </div>
+            <div class="slide" id="slide-3">
+                <img src="./Practica pasteleria 1 - copia (2)/pexels-maria-orlova-4913399.jpg" alt="">
+                <div class="caption"> <span>Varios</span>Sabores</div>
+            </div>
+            <div class="slide" id="slide-4">
+                <img src="./Practica pasteleria 1 - copia (2)/pexels-marko-klaric-6408290.jpg" alt="">
+                <div class="caption"> <span>Muchos</span>Adornos</div>
+            </div>
+
+            <div class="dots">
+                <label for="radio-1" id="label-1"></label>
+                <label for="radio-2" id="label-2"></label>
+                <label for="radio-3" id="label-3"></label>
+                <label for="radio-4" id="label-4"></label>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
   
-<html>
+    <section id="sec1">
+        
+    </section>
+
+    <section id="sec2">
+        <div class="contenedor-texto">
+            <h2>Sabores</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos.</p>
+            <a href="#sec4">Pide el tuyo</a>
+        </div>
+        <img src="./1.png" alt="">
+    </section>
+
+    <section id="sec3">
+        <div class="contenedor-texto">
+            <h2>Adornos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos.</p>
+            <a href="#sec4">Pide el tuyo</a>
+        </div>
+        <img src="./1.png" alt="">
+    </section>
+
+    <section id="sec4">
+        <div class="contenedor-texto">
+            <h2>Realiza tu pedido</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos.</p>
+            <a href="#sec1">Inicio</a>
+        </div>
+        <img src="./1.png" alt="">
+    </section>
+
+    <section id="sec5">
+        <div class="contenedor-texto">
+            <h2>Ubicación</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos.</p>
+            <a href="#sec1">Inicio</a>
+        </div>
+        <img src="./1.png" alt="">
+    </section>
+
+
+</body>
+</html>
