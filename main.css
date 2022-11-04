@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+/*----Slider---*/
 .radio {
     display: none;
 }
@@ -121,6 +121,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/*---Navbar---*/
 .nav_input:checked + .nav_menu{
     background: #d07085c1;
 }
@@ -154,7 +155,50 @@ html{
     grid-auto-flow: column;
     gap: 3em;
 }
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
 
+}
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+@media (max-width: 700px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        background: #d07085c1;
+        width:100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out ;
+    }
+    .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }
+}
+
+/*---Section---*/
 section{
     height: 800px;
     display: flex;
@@ -194,57 +238,18 @@ section{
 
 }
 
-.nav_item{
-    color: #fff;
-    text-decoration: none;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
-}
-.nav_item::after{
-    content: "";
-    display: block;
-    background: #fff;
-    width: 90%;
-    margin-top: 3px;
-    height: 3px;
-    clip-path: var(--clippy);
-    transition: clip-path .3s;
-
-}
-.nav_item:hover{
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-@media (max-width: 700px){
-    .nav_label{
-        display: block;
-        cursor: pointer;
-    }
-    .nav_menu{
-        position: fixed;
-        top: 60px;
-        bottom: 0;
-        background: #d07085c1;
-        width:100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out ;
-    }
-    .nav_input:checked + .nav_menu{
-        clip-path: circle(100% at center);
-    }
-}
-
 .contenedor-texto{
     margin: 1.5em;
     text-align: center;
 }
 
 .contenedor-texto p{
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.contenedor-texto1 p{
+    margin-top: 15px;
 }
 
 section h2{
@@ -258,7 +263,7 @@ section p{
 }
 
 .contenedor-texto a{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 section a{
     display: inline-block;
@@ -275,8 +280,9 @@ section a{
 }
 
 section:nth-child(3){
-    background-color: #fff;
-}
+    background:#fff; 
+    background-size: cover;
+    background-position: center center;}
 section:nth-child(4){
     background-image: linear-gradient(to top, #fecfef 0%, #fecfef 1%, #fff 100%);
     
@@ -316,6 +322,7 @@ section:nth-child(7){
     
 }
 
+/*---Formulario---*/
 
 .form {
     position: relative;
@@ -441,6 +448,8 @@ button{
     flex-direction: row;
 }
 
+/*---Mapa---*/
+
 .map{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
     border-radius: 8px;
@@ -490,6 +499,8 @@ footer{
         align-content: center;
     }
 }
+
+/*---Tarjetas---*/
 
 .contenedor{
     width: 100%;
@@ -581,7 +592,7 @@ footer{
     }
     .card img{
         width:100%;
-        height: 300px;
+        height: 200px;
         align-items: center;
         justify-content: center;
     }
@@ -592,6 +603,7 @@ footer{
         
     }
     .card .contenido p{
+        font-size: 14px;
         line-height: 1;
         color: #6a6a6a;
     }
@@ -602,3 +614,125 @@ footer{
     }
     
 }
+
+@media all and (max-width: 520px)
+{
+    .contenedor{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+    }
+    .contenedor{
+        display:flex;
+        flex-direction: column;
+        max-width: fit-content;
+        max-height: 800px;
+        position: relative;
+        margin: 0 ;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+    .card img{
+        width:100%;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card .contenido p{
+        font-size: small;
+        line-height: 1;
+        color: #6a6a6a;
+    }
+    
+    .card .contenido h3{
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .map{
+        height: 280px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+        border-radius: 8px;
+    }
+    .card .contenido a{
+        padding: 5px;
+    }
+}
+
+/*---Footer---*/
+
+.pie-pagina{
+    width: 100%;
+    background: #fff;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #d07085;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #283773;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #d07085;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #283773;
+}
+
+.pie-pagina .grupo-2{
+    width: 100%;
+    background: #d07085;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:700px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
+
