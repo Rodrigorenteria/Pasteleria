@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bake n' Take</title>
-    <link rel="stylesheet" href="Pasteleria_admin.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav class="nav">
@@ -21,28 +21,65 @@
             <input type="checkbox" id="menu" class="nav_input">
 
             <div class="nav_menu">
-                <a href="./Pasteleria.html" class="nav_item">Inicio</a>
+                <a href="#sec1" class="nav_item">Inicio</a>
+                <a href="#sec2" class="nav_item">Sabores</a>
+                <a href="#sec3" class="nav_item">Adornos</a>
+                <a href="#sec4" class="nav_item">Pedidos</a>
+                <a href="#sec5" class="nav_item">Contacto</a>
+                <a href="./Pasteleria_admin.html" class="nav_item">Administrador</a>
             </div>
 
         </div>
     </nav>
     
     <div class="container">
+        <div class="slider">
+
+            <input type="radio" class="radio" name="images" id="radio-1" checked>
+            <input type="radio" class="radio" name="images" id="radio-2">
+            <input type="radio" class="radio" name="images" id="radio-3">
+            <input type="radio" class="radio" name="images" id="radio-4">
+
+            <div class="slide" id="slide-1">
+                <img src="./pexels-danik-prihodko-8176298.jpg" alt="">
+                <div class="caption"> <span>Deliciosos</span>Pasteles</div>
+            </div>
+            <div class="slide" id="slide-2">
+                <img src="./pexels-igor-ovsyannykov-205961.jpg" alt="">
+                <div class="caption"> <span>Combinaciones</span>Personales</div>
+            </div>
+            <div class="slide" id="slide-3">
+                <img src="./pexels-maria-orlova-4913399.jpg" alt="">
+                <div class="caption"> <span>Varios</span>Sabores</div>
+            </div>
+            <div class="slide" id="slide-4">
+                <img src="./pexels-marko-klaric-6408290.jpg" alt="">
+                <div class="caption"> <span>Muchos</span>Adornos</div>
+            </div>
+
+            <div class="dots">
+                <label for="radio-1" id="label-1"></label>
+                <label for="radio-2" id="label-2"></label>
+                <label for="radio-3" id="label-3"></label>
+                <label for="radio-4" id="label-4"></label>
+
+            </div>
+
+
+        </div>
+
 
     </div>
   
     <section id="sec1">
-        <div class="contenedor-texto2">
-            <h2 class="Bienvenido">Bienvenido Administrador</h2>
-            <p class="Bienvenido1">Aqui se muestra el stock y los pedidos realizados por los clientes.</p>
-        </div>
+        
     </section>
 
     <section class="section2a" id="sec2">
         <div class="contenedor-texto">
             <h2>Sabores</h2>
-            <p>Se pueden observar las cantidades restantes.</p>
-
+            <p>Elaboramos pasteles con los sabores mas deliciosos que tu paladar pueda probar.</p>
+            <!--<a href="#sec4">Pide el tuyo</a>-->
         </div>
             
         <div class="contenedor">
@@ -52,8 +89,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Chocolate</h3>
-                    <p>Queda un total de: </p>
-                    <a>15 pz</a>
+                    <p>Delicioso pastel con sabor a chocolate amargo.</p>
+                    <!--<a href="#">Leer mas</a-->
+                    <a href="#sec4">$155.00</a>
                 </div>
             </div>
             <div class="card">
@@ -62,8 +100,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Vainilla</h3>
-                    <p>Queda un total de: </p>
-                    <a>4 pz</a>
+                    <p>Pastel elaborado con exquisito sabor a vainilla.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$125.00</a>
                 </div>
             </div>
             <div class="card">
@@ -72,8 +111,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Red Velvet</h3>
-                    <p>Queda un total de: </p>
-                    <a>7 pz</a>
+                    <p>Sauve pastel color rojizo con un sabor irresistible.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$190.00</a>
                 </div>
             </div>
             <div class="card">
@@ -82,17 +122,20 @@
                 </figure>
                 <div class="contenido">
                     <h3>Fresa</h3>
-                    <p>Queda un total de: </p>
-                    <a>6 pz</a>
+                    <p>Pastel de tres leches con relleno de fresa y pan sabor vainilla.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$134.00</a>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section class="section2a" id="sec3">
         <div class="contenedor-texto">
             <h2>Adornos</h2>
-            <p>Se pueden observar las cantidades restantes.</p>
+            <p>Contamos con una gran vairiedad de adornos y combinaciones para que lo pueda personalizar a su antojo.</p>
+            <!--<a href="#sec4">Pide el tuyo</a>-->
         </div>
         <div class="contenedor">
             <div class="card">
@@ -101,8 +144,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Betún</h3>
-                    <p>Queda un total de: </p>
-                    <a>5 kg</a>
+                    <p>Exquisito betun de vainillla.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$90.00</a>
                 </div>
             </div>
             <div class="card">
@@ -111,8 +155,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Fondant</h3>
-                    <p>Queda un total de: </p>
-                    <a>8 kg</a>
+                    <p>Contamos con varios colores de fondant.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$85.00</a>
                 </div>
             </div>
             <div class="card">
@@ -121,8 +166,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Frutas</h3>
-                    <p>Queda un total de: </p>
-                    <a>35 kg</a>
+                    <p>Las frutas más frescas con la mejor calidad. Fresa, frutos rojos, mango, uvas y más.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$66.00</a>
                 </div>
             </div>
             <div class="card">
@@ -131,8 +177,9 @@
                 </figure>
                 <div class="contenido">
                     <h3>Coberturas</h3>
-                    <p>Queda un total de: </p>
-                    <a>5 kg</a>
+                    <p>Puede ponerle una cubierta a su pastel del sabor que mas le guste.</p>
+                    <!--<a href="#">Leer mas</a>-->
+                    <a href="#sec4">$78.00</a>
                 </div>
             </div>
            
@@ -142,64 +189,111 @@
 
     <section class="section2" id="sec4">
         <div class="contenedor-texto1">
-            <h2>Pedidos</h2>
-            <p>Se pueden observar los pedidos realizados</p>
+            <h2>¡Realiza tu pedido!</h2>
+            <p>Completa el siguiente formulario para poder hacer tu pedido</p>
+            <!--<a href="#sec1">Inicio</a>-->
         </div>
+        <div class="form1">
+            <form action="" class="form">
 
-        <div class="container3">
-            <table>
-                <thead>
-                    <tr>
-                       <th>N°</th> 
-                       <th>Nombre</th> 
-                       <th>Pedido</th> 
-                       <th>Direccion</th> 
-                       <th>Telefono</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-titulo="N°">01</td>
-                        <td data-titulo="Nombre">Carlos Rivas</td>
-                        <td data-titulo="Pedido">Chocolate</td>
-                        <td data-titulo="Direccion">Av. Pavoreal 40, Atizapan, Edo de Mex</td>
-                        <td data-titulo="Telefono">5512345678</td>
-                    </tr>
-                    <tr>
-                        <td data-titulo="N°">01</td>
-                        <td data-titulo="Nombre">Carlos Rivas</td>
-                        <td data-titulo="Pedido">Chocolate</td>
-                        <td data-titulo="Direccion">Av. Pavoreal 40, Atizapan, Edo de Mex</td>
-                        <td data-titulo="Telefono">5512345678</td>
-                    </tr>
-                    <tr>
-                        <td data-titulo="N°">01</td>
-                        <td data-titulo="Nombre">Carlos Rivas</td>
-                        <td data-titulo="Pedido">Chocolate</td>
-                        <td data-titulo="Direccion">Av. Pavoreal 40, Atizapan, Edo de Mex</td>
-                        <td data-titulo="Telefono">5512345678</td>
-                    </tr>
-                    <tr>
-                        <td data-titulo="N°">01</td>
-                        <td data-titulo="Nombre">Carlos Rivas</td>
-                        <td data-titulo="Pedido">Chocolate</td>
-                        <td data-titulo="Direccion">Av. Pavoreal 40, Atizapan, Edo de Mex</td>
-                        <td data-titulo="Telefono">5512345678</td>
-                    </tr>
-                    <tr>
-                        <td data-titulo="N°">01</td>
-                        <td data-titulo="Nombre">Carlos Rivas</td>
-                        <td data-titulo="Pedido">Chocolate</td>
-                        <td data-titulo="Direccion">Av. Pavoreal 40, Atizapan, Edo de Mex</td>
-                        <td data-titulo="Telefono">5512345678</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="formu1">
+                    <h3 class="subtitulo">Datos de envío</h3>
+                        
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Nombre</span>
+                        <i></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="email" required="required">
+                        <span>Correo</span>
+                        <i></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="tel" required="required" maxlength="10" >
+                        <span>Teléfono</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Dirección</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Comentarios</span>
+                        <i></i>
+                    </div>   
+                </div>
+                <br><br>
+                <div class="formu1">
+                    <h3 class="subtitulo">Pedido</h3>
+                    
+                    <p>Sabores</p>
+
+                    <div class="saboresform">
+                        <input type="checkbox" id="Vainilla" name="Vainilla" required="required">
+                        <label for="Chocoltae">Chocolate</label><br>
+                        <input type="checkbox" id="Vainilla" name="Vainilla" required="required">
+                        <label for="Vainilla">Vainilla</label><br>
+                        <input type="checkbox" id="Red_velvet" name="Red_velvet" required="required">
+                        <label for="Rev_velvet">Red Velvet</label><br>
+                        <input type="checkbox" id="Fresa" name="Fresa" required="required">
+                        <label for="Fresa">Fresa</label><br>
+                    </div>
+                    
+                    <p>Adornos</p>
+
+                    <div class="adornosform">
+                        <input type="checkbox" id="fondant" name="fondant" required="required">
+                        <label for="fondant">Fondant</label><br>
+                        <input type="checkbox" id=" betun" name="betun" required="required">
+                        <label for="betun">Betún</label><br>
+                        <input type="checkbox" id="Coberturas" name="Coberturas" required="required">
+                        <label for="Coberturas">Coberturas</label><br>
+                        <input type="checkbox" id="Frutas" name="Frutas" required="required">
+                        <label for="Frutas">Frutas</label><br>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>¿Que frutas serían?</span>
+                        <i></i>
+                    </div>
+                  
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>¿Alguna alergía?</span>
+                        <i></i>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <div class="boton">
+                        <button type="submit">Solicitar pedido</button>
+                    </div>
+                    <div class="boton">
+                        <button type="reset">Resetear</button>
+                    </div> 
+                </div>
+                
+            </form> 
         </div>
+        
         
     </section>
 
-    <section class="section2a" id="sec5">
+    <section class="section2b" id="sec5">
+        <div class="contenedor-texto">
+            <h2>Ubicación</h2><br>
+            <p>Av. Moliere 352, Polanco, Miguel Hidalgo, CDMX</p><br>
+            <p><b>Horario:</b> 6:00 am - 10:00pm </p><br>
+            <a href="#sec1">Inicio</a>
+        </div>
+        <br>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15049.641894485068!2d-99.21864777803421!3d19.43786157526202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f7c4abc66f%3A0xb112adeffc25919!2sPasteler%C3%ADas%20Esperanza!5e0!3m2!1ses!2smx!4v1667158533164!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer class="pie-pagina">
